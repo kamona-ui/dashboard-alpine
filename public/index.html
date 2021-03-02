@@ -48,6 +48,7 @@
                 class="p-2 transition-colors rounded-lg shadow-md hover:bg-primary-darker hover:text-white focus:outline-none focus:ring focus:ring-primary focus:ring-offset-white focus:ring-offset-2"
                 :class="(isSidebarOpen && currentSidebarTab == 'linksTab') ? 'text-white bg-primary' : 'text-gray-500 bg-white'"
               >
+                <span class="sr-only">Toggle sidebar</span>
                 <svg
                   aria-hidden="true"
                   class="w-6 h-6"
@@ -65,6 +66,7 @@
                 class="p-2 transition-colors rounded-lg shadow-md hover:bg-primary-darker hover:text-white focus:outline-none focus:ring focus:ring-primary focus:ring-offset-white focus:ring-offset-2"
                 :class="(isSidebarOpen && currentSidebarTab == 'messagesTab') ? 'text-white bg-primary' : 'text-gray-500 bg-white'"
               >
+                <span class="sr-only">Toggle message panel</span>
                 <svg
                   aria-hidden="true"
                   class="w-6 h-6"
@@ -87,6 +89,7 @@
                 class="p-2 transition-colors rounded-lg shadow-md hover:bg-primary-darker hover:text-white focus:outline-none focus:ring focus:ring-primary focus:ring-offset-white focus:ring-offset-2"
                 :class="(isSidebarOpen && currentSidebarTab == 'notificationsTab') ? 'text-white bg-primary' : 'text-gray-500 bg-white'"
               >
+                <span class="sr-only">Toggle notifications panel</span>
                 <svg
                   aria-hidden="true"
                   class="w-6 h-6"
@@ -116,6 +119,7 @@
                   src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
                   alt="Ahmed Kamel"
                 />
+                <span class="sr-only">User menu</span>
               </button>
               <div
                 x-show="isOpen"
@@ -126,7 +130,7 @@
                 class="absolute w-48 py-1 mt-2 origin-bottom-left bg-white rounded-md shadow-lg left-10 bottom-14 focus:outline-none"
                 role="menu"
                 aria-orientation="vertical"
-                aria-labelledby="user-menu"
+                aria-label="user menu"
               >
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"
                   >Your Profile</a
@@ -249,7 +253,9 @@
               <button
                 class="p-2 mr-4 text-gray-400 bg-white rounded-lg shadow-md hover:text-gray-600 focus:outline-none focus:ring focus:ring-white focus:ring-offset-blue-gray-100 focus:ring-offset-4"
               >
+                <span class="sr-only">Settings</span>
                 <svg
+                  aria-hidden="true"
                   class="w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
