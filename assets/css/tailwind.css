@@ -629,6 +629,16 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.rounded-l-3xl {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
 .rounded-tr-3xl {
   border-top-right-radius: 1.5rem;
 }
@@ -639,6 +649,14 @@ video {
 
 .border-r-2 {
   border-right-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .block {
@@ -655,6 +673,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -693,6 +715,10 @@ video {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -717,6 +743,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -754,8 +785,16 @@ video {
   margin-top: -2.5rem;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-80 {
   opacity: 0.8;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .hover\:opacity-100:hover {
@@ -842,12 +881,37 @@ video {
   bottom: 0px;
 }
 
+.inset-x-0 {
+  right: 0px;
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
 .left-10 {
   left: 2.5rem;
 }
 
 .bottom-14 {
   bottom: 3.5rem;
+}
+
+.top-16 {
+  top: 4rem;
 }
 
 .left-16 {
@@ -865,6 +929,11 @@ video {
 
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-t {
+  --tw-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -979,6 +1048,10 @@ video {
   width: 1.5rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1030,8 +1103,20 @@ video {
   --tw-translate-x: 0px;
 }
 
+.translate-x-full {
+  --tw-translate-x: 100%;
+}
+
 .-translate-x-full {
   --tw-translate-x: -100%;
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+}
+
+.translate-y-full {
+  --tw-translate-y: 100%;
 }
 
 .transition-all {
@@ -1129,6 +1214,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-72 {
     width: 18rem;
   }
