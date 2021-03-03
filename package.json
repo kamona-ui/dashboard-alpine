@@ -37,10 +37,5 @@
     "postcss": "7",
     "postcss-cli": "7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 120
   }
 }
