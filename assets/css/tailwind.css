@@ -894,6 +894,10 @@ video {
   bottom: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-5 {
   right: 1.25rem;
 }
@@ -912,10 +916,6 @@ video {
 
 .top-16 {
   top: 4rem;
-}
-
-.left-16 {
-  left: 4rem;
 }
 
 * {
@@ -1220,6 +1220,10 @@ video {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:left-16 {
+    left: 4rem;
   }
 
   .sm\:w-72 {
